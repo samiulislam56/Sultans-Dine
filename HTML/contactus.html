@@ -1,0 +1,107 @@
+
+<div class="navbar-container">
+    <!-- Logo -->
+    <a href="#" class="logo">
+      <img src="/sultansdine/Images/Suntan_s_Dine-removebg-preview.png" alt="Logo" />
+    </a>
+  
+    <!-- Hamburger icon -->
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  
+    <!-- Navigation links -->
+    <ul class="nav-menu" id="nav-menu">
+      <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="Gallery.html" class="nav-link">Gallery</a></li>
+      <li class="nav-item"><a href="Eventmenu.html" class="nav-link">Menu</a></li>
+      <li class="nav-item"><a href="About us.html" class="nav-link">About Us</a></li>
+      <li class="nav-item"><a href="customerreview.html" class="nav-link">Review</a></li>
+      <li class="nav-item"><a href="contactus.html" class="nav-link">Contact Us</a></li>
+    </ul>
+  </div>
+<link rel="stylesheet" href="/sultansdine/CSS/contactus.css">
+<link rel="stylesheet" href="/sultansdine/CSS/style.css">
+
+  <!-- 
+    - #HEADER
+  -->
+  
+  <section class="contact-section">
+    <div class="container contact-container">
+  
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <ul>
+          <li>
+            <img src="/sultansdine/Images/location-icon.png" alt="Location Icon">
+            <p>Daffodil International University<br>Daffodil Smart City, Ashulia<br>Savar, Dhaka</p>
+          </li>
+          <li>
+            <img src="/sultansdine/Images/mail-icon.png" alt="Mail Icon">
+            <p>info@sultansdine.com</p>
+          </li>
+          <li>
+            <img src="/sultansdine/Images/call-icon.png" alt="Call Icon">
+            <p>+8801305-638206</p>
+          </li>
+        </ul>
+  
+        <div class="social-icons">
+          <a href="#"><img src="/sultansdine/Images/1.png" alt="Facebook"></a>
+          <a href="#"><img src="/sultansdine/Images/2.png" alt="Twitter"></a>
+          <a href="#"><img src="/sultansdine/Images/3.png" alt="Instagram"></a>
+        </div>
+      </div>
+  
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h2>Send a Message</h2>
+        <form action="#" method="post" class="form-box">
+          <div class="form-row">
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Last Name" required>
+          </div>
+          <div class="form-row">
+            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Mobile No." required>
+          </div>
+          <div class="form-row">
+            <input type="date" required>
+            <input type="text" placeholder="Event Location" required>
+          </div>
+          <div class="form-row">
+            <input type="number" placeholder="Number of Guests" required>
+          </div>
+          <div class="form-row full">
+            <textarea placeholder="Write your message here..." required></textarea>
+          </div>
+          <div class="form-row full">
+            <input type="submit" value="Send Message">
+          </div>
+        </form>
+      </div>
+  
+    </div>
+  </section>
+  
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuToggle = document.getElementById("menu-toggle");
+      const navMenu = document.getElementById("nav-menu");
+  
+      if (menuToggle && navMenu) {
+        menuToggle.addEventListener("click", () => {
+          navMenu.classList.toggle("show");
+        });
+  
+        document.querySelectorAll(".nav-link").forEach(link => {
+          link.addEventListener("click", () => {
+            navMenu.classList.remove("show");
+          });
+        });
+      }
+    });
+  </script>
